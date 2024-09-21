@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>kontak lampu</title>
+    </head>
+    <body>
+        <img src="assets/images/off.gif" alt="" id="lampu1" />
+        <h1>cetakan lampu on off</h1>
+        <button onclick="saklar('on')">nyalakan lampu</button>
+        <button onclick="saklar('off')">matikan lampu</button>
+
+        <!-- script js -->
+        <script>
+            function saklar(params){                
+                let lampu1=document.getElementById("lampu1");
+                
+                if(params=="on"){
+                    lampu1.src="assets/images/on.gif";
+                }
+                if(params=="off"){
+                    lampu1.src="assets/images/off.gif";
+                }
+                return lampu1;
+            }
+        </script> 
+    </body>
+</html>
